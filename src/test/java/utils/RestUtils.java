@@ -1,4 +1,4 @@
-package plataformaFlmes.utils;
+package utils;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -32,7 +32,9 @@ public class RestUtils {
                 .body(json)
                 .when()
                 .post(endPoint)
-                .thenReturn();
+                .then()
+                .log().all()
+                .extract().response();
     }
 
     public static Response get(Map<String, String> header, String endPoint) {

@@ -15,7 +15,6 @@ public class LoginSteps {
 
     @Dado("que tenha um payload valido de login da API PlataformaFilmes")
     public void queTenhaUmPayloadValidoDeLoginDaAPIPlataformaFilmes() {
-
         LoginMap.initLogin();
         RestUtils.setBaseURI(url);
     }
@@ -35,6 +34,13 @@ public class LoginSteps {
         LoginMap.initLogin();
         RestUtils.setBaseURI(url);
         LoginMap.getLogin().putAll(map);
+
+    }
+    @Dado("que tenha realizado o login com dados validos")
+    public void queTenhaRealizadoOLoginComDadosValidos() {
+        queTenhaUmPayloadValidoDeLoginDaAPIPlataformaFilmes();
+        envioUmaRequisicaoDoTipoPOSTDeLogin();
+        armazenoOTokenQueReceboDoResponseDeLogin();
 
     }
 

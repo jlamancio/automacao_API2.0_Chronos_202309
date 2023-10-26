@@ -1,5 +1,5 @@
 #language:pt
-@Categoria
+@categoria
 Funcionalidade: Consultar Categoria
 
   Cenario: Realizar Consulta Categoria com sucesso
@@ -16,6 +16,7 @@ Funcionalidade: Consultar Categoria
 
       Cenário: Realizo Consulta Categoria com o token invalido
         Dado que altero o campo "Authorizatio" para "invalido" do header de categoria
+        Quando realizo uma requisicao do tipo GET de Categoria
         Entao valido que recebo status 403 no response
         E valido que no campo "message" possui o valor "Access Denied"
 

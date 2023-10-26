@@ -1,16 +1,16 @@
 #language:pt
-@Regressao
+@regressao
 Funcionalidade: Realizar Login
   Testes de Login na API Plataforma Filmes
 
-  @Login
+  @login
   Cenario: Realizar Login com Sucesso
     Dado que tenha um payload valido de login da API PlataformaFilmes
     Quando envio uma requisicao do tipo POST de Login
     Entao valido que recebo status 200 no response
     E armazeno o token que recebo do response de Login
 
-  @LoginInvalido
+  @loginInvalido
   Esquema do Cenario: Realizar Login com <Cenario>
     Dado que tenha um payload de Login da API PlataformaFilmes com as seguintes informacoes
       | email | <email> |

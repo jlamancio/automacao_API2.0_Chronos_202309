@@ -15,7 +15,7 @@ public class CategoriaSteps {
     @Dado("que tenha um payload da API de Categoria")
     public void queTenhaUmPayloadDaAPIDeCategoria() {
 
-        header.put("Authorization", "Bearear " + LoginMap.token);
+        header.put("Authorization", "Bearer " + LoginMap.token);
 
     }
 

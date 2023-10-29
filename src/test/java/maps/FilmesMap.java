@@ -83,7 +83,6 @@ public class FilmesMap {
                 "John Hartley assume o caso. Durante sua busca, ele se ve diante de " +
                 "um assalto ousado e e forcado a se aliar ao maior ladrao de arte " +
                 "da historia");
-
         filme.put("duracao", 1.35);
         filme.put("categorias", listCategoria);
         filme.put("plataformas", listPlataforma);

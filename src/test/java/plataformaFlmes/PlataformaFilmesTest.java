@@ -23,6 +23,7 @@ public class PlataformaFilmesTest {
         assertEquals(200, response.statusCode());
 
         LoginMap.token = response.jsonPath().get("token");
+
     }
 
     @Test

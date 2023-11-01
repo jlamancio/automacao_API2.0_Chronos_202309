@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Others ###
+Payload_Crud_Filmes.txt

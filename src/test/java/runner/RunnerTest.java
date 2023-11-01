@@ -17,7 +17,7 @@ import utils.RestUtils;
 public class RunnerTest {
     @BeforeClass
     public static void beforeClass(){
-        RestUtils.setBaseURI("http://amancio:8080/");
+        RestUtils.setBaseURI("http://amancio:8181/");
     }
 }
 
